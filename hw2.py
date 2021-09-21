@@ -1,42 +1,39 @@
 # Exercise #1
-print("Cubed Numbers up to a 1000:")
-def cubed():
-    num = 0
-    while num <= 10:
-        print(num ** 3)
-        num +=1
-        
-cubed()        
-print("------")
+print("Exercise #1")
+# Use the following list - [1,11,14,5,8,9]
+my_list = [1,11,14,5,8,9]
+def under_ten(list):
+    print([n for n in list if n < 10])
 
+under_ten(my_list)
 
-# Exercise # 2
-print("Prime Numbers up to a 100:")
+print("")
+print("-----")
+print("Exercise #2")
+# # Exercise #2
+l_1 = [1,2,3,4,5,6]
+l_2 = [3,4,5,6,7,8,10]
 
-def get_prime():
-    for num in range(2, 101):    
-        if num == 2:
-            print(2)
-        else:    
-            for counter in range(2, num):  
-                if num % counter == 0:  
-                    break
-                elif counter + 1 == num:
-                    print(num)
+def comb_sort(l1, l2):
+   l3 = l1 + l2
+   l3.sort()
+   print(l3)
 
-get_prime()
+comb_sort(l_1, l_2)  
 
-print("------")
+print("")
+print("-------")  
+print("Exercise #3")
+# Excercise #3
 
-# Exercise #3
-def is_adult():
-    age = int(input("What's your age?"))
-    if age < 18:
-        print("Kids")
-    elif age > 17 and age < 66:
-        print("Adults")
-    else:
-        print("Seniors")     
-is_adult()
+first_name = ['John', 'Evan', 'Jordan', 'Max']
+last_name = ['Smith', 'Smith', 'Williams', 'Bell']
 
-print("------")
+def create_name(l1, l2):
+    total_name = []
+    for i in range(len(l1)):
+        total_name.append(f"{l1[i]} {l2[i]}")
+    print(total_name)
+create_name(first_name, last_name)
+
+print("--end--")
