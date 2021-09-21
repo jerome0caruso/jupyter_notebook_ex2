@@ -9,6 +9,7 @@ def cubed():
 cubed()        
 print("------")
 
+
 # Exercise # 2
 print("Prime Numbers up to a 100:")
 
